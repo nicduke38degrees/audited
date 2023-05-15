@@ -37,7 +37,7 @@ Audited is currently ActiveRecord-only. In a previous life, Audited worked with 
 Add the gem to your Gemfile:
 
 ```ruby
-gem "audited", "~> 5.0"
+gem "audited"
 ```
 
 And if you're using ```require: false``` you must add initializers like this:
@@ -238,7 +238,7 @@ class ApplicationController < ActionController::Base
     if current_user
       current_user
     else
-      'Elon Musk'
+      'Alexander Fleming'
     end
   end
 end
