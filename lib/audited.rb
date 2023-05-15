@@ -48,4 +48,4 @@ ActiveSupport.on_load :active_record do
 end
 
 require "audited/sweeper"
-require "audited/railtie"
+require "audited/railtie" if Audited.const_defined?(:Rails)
